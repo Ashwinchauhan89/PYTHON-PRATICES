@@ -1,12 +1,8 @@
-number = int(input("Enter a number: "))
-temp = number
-reverse = 0
-while number > 0:
-    digit = number % 10
-    reverse = reverse * 10 + digit
-    number = number // 10
+class A():
+    def __init__(self,name,age):  # Paremeterized Construction
+        self.name= name
+        self.age = age
 
-if temp == reverse:
-      print("Number  is a palindrome")
-else:
-      print("Number is not a palindrome")
+obj=A("Ashwin ","15")
+print(obj.name)
+print(obj.age)

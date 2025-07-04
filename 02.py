@@ -1,12 +1,12 @@
-n=int(input("Enter a number: "))
-sum=0
-order= len(str(n))
-copy_n = n
-while n > 0:
-    digit = n % 10
-    sum += digit ** order
-    n = n // 10
-if sum == copy_n:
-     print("Number is an Armstrong number")  
-else:
-     print("Number is not an Armstrong number")
+a=int(input("Enter the First number : "))
+b=int(input("Enter the Second number : "))
+c=int(input("Enter the Third number : "))
+
+if (a>b and a>c):
+    print("A is greater")
+
+elif (b>a and b>c):
+    print("B is greater")
+
+else: 
+    print("C is greater")

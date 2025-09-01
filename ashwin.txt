@@ -1,0 +1,138 @@
+program 1
+
+class A():
+    def __init__(self,name,age):  # Paremeterized Construction
+        self.name= name
+        self.age = age
+
+obj=A("Ashwin ","15")
+print(obj.name)
+print(obj.age)
+
+
+
+Program 2
+
+a=int(input("Enter the First number : "))
+b=int(input("Enter the Second number : "))
+c=int(input("Enter the Third number : "))
+
+if (a>b and a>c):
+    print("A is greater")
+
+elif (b>a and b>c):
+    print("B is greater")
+
+else: 
+    print("C is greater")
+
+
+Program 3
+
+class Parent1():
+    def parent1(self):
+        print("parent 1 method is called")
+
+
+class Parent2():
+    def parent2(self):
+        print("parent 2 method is called")
+
+class Child(Parent1,Parent2):
+    def child(self):
+        print("child method is called")
+
+obj=Child()
+
+obj.child()
+obj.parent1()
+obj.parent2()
+
+
+
+
+Program 4
+
+number=int(input("Enter the number :"))
+temp=number
+reversed =0
+
+
+while number >0:
+    digit = number % 10
+    reversed = reversed * 10 + digit
+    number = number // 10
+
+if (temp== reversed):
+    print("Number is Palindrome")
+
+else:
+    print("Not palindrome")
+
+
+
+
+Program 5
+
+class Parent():
+    def parent(self):
+        print("parent method is called")
+
+class Child(Parent):
+    def child(self):
+        print("Child method is called")
+
+obj=Child()
+obj.child()
+obj.parent()
+
+
+Program 6
+
+a=str(input("Enter the string :"))
+if (a=="a" or a=="e" or a=="o" or a=="i" or a=="u"):
+    print("Vowels")
+
+else:
+    print("Consonants")
+
+
+Program 7
+
+a=int(input("first :"))
+b=int(input("second :"))
+c=int(input("third :"))
+res=[a,b,c]
+
+res.sort()
+print(res)
+
+
+
+Program 8
+
+principle= float(input("Enter the principal :"))
+rate = float(input("Enter the rate :"))
+time = float(input("Enter the time :"))
+
+si=(principle+rate+time)/100
+
+print("Simple Interest ",si)
+
+
+
+Program 9
+
+a=int(input("Enter any Number : "))
+
+for i in range (1,11):
+    print(a,"*",i,"=",a*i)
+
+Program 10
+
+class Overloading():
+    def __init__(self,*args):
+        print(*args)
+
+obj=Overloading(12)
+obj=Overloading(10,43)
